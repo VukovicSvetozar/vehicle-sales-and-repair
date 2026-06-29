@@ -86,3 +86,36 @@ Nakon realizacije, radni nalog se transformiše u **Uslugu**.
 *   **Dodatne usluge:** Sistem podržava i obračun dodatnih usluga kao što su odvoz/dovoz vozila, zatečena količina goriva u rezervoaru ili iznajmljivanje zamjenskog vozila.
 
 Kada se zatvore svi aktivni radni nalozi za vozilo, automatski se mijenja njegov status u servisnoj knjizi i ažurira datum posljednjeg servisa.
+
+---
+
+## 💻 Tehnologije i Alati
+
+* **Jezik:** Java 17 (OpenJDK)
+* **GUI Biblioteka:** JavaFX 17
+* **Arhitekturalni koncepti:** Multithreading (`Thread`, `Runnable`), Sinhronizacija (`synchronized`, `Locks`), Java I/O i Serijalizacija.
+* **Logovanje:** Integrisana `Logger` klasa za robusno upravljanje izuzecima u svim modulima.
+
+---
+
+## 🚀 Kako pokrenuti projekat lokalno
+
+### Preduslovi
+* Instaliran **Java 17 JDK**.
+* Preuzet **JavaFX SDK 17**.
+* Instaliran **MySQL Server** (verzija 8.0 ili novija).
+
+### Podešavanje baze podataka
+Prije pokretanja aplikacije, potrebno je kreirati i popuniti bazu podataka. Pozicionirajte se u folder sa SQL skriptama i izvršite ih u sljedećem redoslijedu:
+
+1. `PSV_kreiranje_seme.sql`
+2. `PSV_procedure _trigeri.sql`
+3. `PSV_popunjavanje_baze.sql`
+
+Nakon uvoza skripti, otvorite konfiguracioni fajl `ConnectionPool.properties` unutar projekta i prilagodite parametre `username` i `password` vašoj lokalnoj konfiguraciji MySQL servera.
+
+### Konfiguracija VM argumenata u razvojnom okruženju (IDE)
+Da bi JavaFX moduli bili ispravno učitani, unutar vašeg razvojnog okruženja (npr. IntelliJ IDEA, Eclipse ili VS Code) potrebno je u konfiguraciju pokretanja (Run Configuration / VM Options) dodati sljedeće VM argumente sa putanjom do vašeg lokalnog JavaFX SDK-a:
+
+```text
+--module-path /putanja/do/javafx-sdk-17/lib --add-modules javafx.controls,javafx.fxml
