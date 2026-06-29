@@ -1,0 +1,7 @@
+# Kompajlirani binarne klase (Java bytecode)
+**/bin/
+
+# Eclipse lokalna konfiguracija razvojnog okruženja
+**/.settings/
+**/.classpath
+**/.project

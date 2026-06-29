@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane maxHeight="600.0" maxWidth="810.0" minHeight="600.0" minWidth="810.0" prefHeight="600.0" prefWidth="810.0" style="-fx-background-color: ffff00;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.KomandnaTablaKontroler">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="810.0" minWidth="810.0" prefWidth="810.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="150.0" minHeight="150.0" prefHeight="150.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="450.0" minHeight="450.0" prefHeight="450.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <HBox alignment="TOP_CENTER" maxHeight="150.0" maxWidth="810.0" minHeight="150.0" minWidth="810.0" prefHeight="150.0" prefWidth="810.0">
+         <children>
+            <ImageView fitHeight="145.0" fitWidth="400.0" pickOnBounds="true" preserveRatio="true">
+               <HBox.margin>
+                  <Insets top="20.0" />
+               </HBox.margin>
+               <image>
+                  <Image url="@../../image/Slike%20aplikacije/KomandnaTabla_Logo1.jpg" />
+               </image>
+            </ImageView>
+         </children></HBox>
+      <GridPane alignment="CENTER" maxHeight="450.0" maxWidth="810.0" minHeight="450.0" minWidth="810.0" prefHeight="450.0" prefWidth="810.0" GridPane.rowIndex="1">
+         <children>
+            <Button fx:id="PregledVozilaDugme" maxHeight="100.0" maxWidth="180.0" minHeight="100.0" minWidth="180.0" mnemonicParsing="false" onAction="#PokreniPregledVozila" prefHeight="100.0" prefWidth="180.0" text="Button">
+               <graphic>
+                  <ImageView fitHeight="100.0" fitWidth="180.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+            <Image url="@../../image/Slike%20aplikacije/KomandnaTabla_PregledVozila.png" />
+          </image>
+              </ImageView>
+               </graphic>
+               <GridPane.margin>
+                  <Insets left="75.0" top="20.0" />
+               </GridPane.margin>
+               <padding>
+                  <Insets bottom="0" left="0" right="0" top="0" />
+               </padding>
+            </Button>
+            <Button fx:id="ProdajaVozilaDugme" maxHeight="100.0" maxWidth="180.0" minHeight="100.0" minWidth="180.0" mnemonicParsing="false" onAction="#PokreniProdajaVozila" prefHeight="100.0" prefWidth="180.0" text="Button" GridPane.columnIndex="1">
+               <graphic>
+                  <ImageView fitHeight="100.0" fitWidth="180.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                          <Image url="@../../image/Slike%20aplikacije/KomandnaTabla_ProdajaVozila.png" />
+                     </image></ImageView>
+               </graphic>
+               <GridPane.margin>
+                  <Insets left="45.0" top="20.0" />
+               </GridPane.margin>
+                     <padding>
+                  <Insets bottom="0" left="0" right="0" top="0" />
+               </padding>
+            </Button>
+            <Button maxHeight="100.0" maxWidth="180.0" minHeight="100.0" minWidth="180.0" mnemonicParsing="false" onAction="#PokreniZaposleni" prefHeight="100.0" prefWidth="180.0" text="Button" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <graphic>
+                  <ImageView fitHeight="100.0" fitWidth="180.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                         <Image url="@../../image/Slike%20aplikacije/KomandnaTabla_Zaposleni.png" />
+                     </image></ImageView>
+               </graphic>
+               <GridPane.margin>
+                  <Insets left="45.0" />
+               </GridPane.margin>
+                     <padding>
+                  <Insets bottom="0" left="0" right="0" top="0" />
+               </padding>
+            </Button>
+            <Button fx:id="ServisVozilaDugme" maxHeight="100.0" maxWidth="180.0" minHeight="100.0" minWidth="180.0" mnemonicParsing="false" onAction="#PokreniServisVozila" prefHeight="100.0" prefWidth="180.0" text="Button" GridPane.rowIndex="1">
+               <graphic>
+                  <ImageView fx:id="ServisVozilaSlika" fitHeight="100.0" fitWidth="180.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+          				   <Image url="@../../image/Slike%20aplikacije/KomandnaTabla_ServisVozila.png" />
+                     </image></ImageView>
+               </graphic>
+               <GridPane.margin>
+                  <Insets left="75.0" />
+               </GridPane.margin>
+                     <padding>
+                  <Insets bottom="0" left="0" right="0" top="0" />
+               </padding>
+            </Button>
+            <Button fx:id="KupovinaVozilaDugme" maxHeight="100.0" maxWidth="180.0" minHeight="100.0" minWidth="180.0" mnemonicParsing="false" onAction="#PokreniKupovinaVozila" prefHeight="150.0" prefWidth="200.0" text="Button" GridPane.columnIndex="2">
+               <graphic>
+                  <ImageView fitHeight="100.0" fitWidth="180.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                           <Image url="@../../image/Slike%20aplikacije/KomandnaTabla_KupovinaVozila.png" />
+                     </image></ImageView>
+               </graphic>
+               <GridPane.margin>
+                  <Insets left="15.0" top="20.0" />
+               </GridPane.margin>
+                     <padding>
+                  <Insets bottom="0" left="0" right="0" top="0" />
+               </padding>
+            </Button>
+            <Button fx:id="KlijentiDugme" maxHeight="100.0" maxWidth="180.0" minHeight="100.0" minWidth="180.0" mnemonicParsing="false" onAction="#PokreniKlijenti" prefHeight="100.0" prefWidth="180.0" text="Button" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <graphic>
+                  <ImageView fitHeight="100.0" fitWidth="180.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                          <Image url="@../../image/Slike%20aplikacije/KomandnaTabla_Klijenti.png" />
+                     </image></ImageView>
+               </graphic>
+               <GridPane.margin>
+                  <Insets left="15.0" />
+               </GridPane.margin>
+                     <padding>
+                  <Insets bottom="0" left="0" right="0" top="0" />
+               </padding>
+            </Button>
+            <Button disable="true" maxHeight="100.0" maxWidth="180.0" minHeight="100.0" minWidth="180.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="180.0" text="Button" GridPane.rowIndex="2">
+               <graphic>
+                  <ImageView disable="true" fitHeight="100.0" fitWidth="180.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                         <Image url="@../../image/Slike%20aplikacije/KomandnaTabla_Izvjestaji.png" />
+                     </image></ImageView>
+               </graphic>
+               <GridPane.margin>
+                  <Insets bottom="20.0" left="75.0" />
+               </GridPane.margin>
+                     <padding>
+                  <Insets bottom="0" left="0" right="0" top="0" />
+               </padding>
+            </Button>
+            <Button disable="true" maxHeight="100.0" maxWidth="180.0" minHeight="100.0" minWidth="180.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="180.0" text="Button" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <graphic>
+                  <ImageView disable="true" fitHeight="100.0" fitWidth="180.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../image/Slike%20aplikacije/KomandnaTabla_Podesavanja.png" />
+                     </image></ImageView>
+               </graphic>
+               <GridPane.margin>
+                  <Insets bottom="20.0" left="45.0" />
+               </GridPane.margin>
+                     <padding>
+                  <Insets bottom="0" left="0" right="0" top="0" />
+               </padding>
+            </Button>
+            <Button fx:id="IzlazDugme" maxHeight="100.0" maxWidth="180.0" minHeight="100.0" minWidth="180.0" mnemonicParsing="false" onAction="#PokreniIzlaz" prefHeight="100.0" prefWidth="180.0" text="Button" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <graphic>
+                  <ImageView fx:id="IzlazSlika" fitHeight="100.0" fitWidth="180.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../image/Slike%20aplikacije/KomandnaTabla_Izlaz.png" />
+                     </image></ImageView>
+               </graphic>
+               <GridPane.margin>
+                  <Insets bottom="20.0" left="15.0" />
+               </GridPane.margin>
+                     <padding>
+                  <Insets bottom="0" left="0" right="0" top="0" />
+               </padding>
+            </Button>
+         </children>
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="270.0" minWidth="270.0" prefWidth="270.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="270.0" minWidth="270.0" prefWidth="270.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="270.0" minWidth="270.0" prefWidth="270.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="150.0" minHeight="150.0" prefHeight="150.0" />
+            <RowConstraints maxHeight="150.0" minHeight="150.0" prefHeight="150.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="150.0" minHeight="150.0" prefHeight="150.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+   </children>
+</GridPane>

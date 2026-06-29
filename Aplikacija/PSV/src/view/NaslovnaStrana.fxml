@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.image.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #4F0D31;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.NaslovnaStranaKontroler">
+   <children>
+   
+
+	  <Button fx:id="NaslovnoDugme" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#PokreniAplikaciju" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #4F0D31;">
+         <graphic>
+            <ImageView fx:id="NaslovnaSlikaDugme" fitHeight="439.0" fitWidth="474.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+            <Image url="@../../image/Slike%20aplikacije/NaslovnaSlika.png" />
+          </image>
+              </ImageView>
+         </graphic></Button>    
+   </children>
+</AnchorPane>

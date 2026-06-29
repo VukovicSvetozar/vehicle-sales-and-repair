@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<GridPane alignment="CENTER" maxHeight="600.0" maxWidth="-Infinity" minHeight="600.0" minWidth="-Infinity" prefHeight="600.0" prefWidth="750.0" styleClass="background" stylesheets="@../../style/ServisVozila.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.servis_vozila.ZahtjeviKontroler">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="350.0" minWidth="350.0" prefWidth="350.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="350.0" minWidth="350.0" prefWidth="350.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="100.0" minHeight="100.0" prefHeight="100.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="200.0" minHeight="200.0" prefHeight="200.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="300.0" minHeight="300.0" prefHeight="300.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <GridPane>
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="350.0" minWidth="350.0" prefWidth="350.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="70.0" minHeight="70.0" prefHeight="70.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Lista zahtjeva" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="120.0" />
+               </GridPane.margin>
+            </Label>
+            <GridPane>
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="87.0" minWidth="87.0" prefWidth="87.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="88.0" minWidth="88.0" prefWidth="88.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="88.0" minWidth="88.0" prefWidth="88.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button fx:id="noviKlijentDugme" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" mnemonicParsing="false" onAction="#noviKlijent" prefHeight="60.0" prefWidth="60.0" styleClass="btnPrikazi" text="Novi Klijent" textAlignment="CENTER" wrapText="true">
+                     <GridPane.margin>
+                        <Insets left="20.0" top="10.0" />
+                     </GridPane.margin></Button>
+                  <Button fx:id="noviZahtjevDugme" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" mnemonicParsing="false" onAction="#noviZahtjev" prefHeight="60.0" prefWidth="60.0" styleClass="btnPrikazi" text="Novi Zahtjev" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="1">
+                     <GridPane.margin>
+                        <Insets left="15.0" top="10.0" />
+                     </GridPane.margin></Button>
+                  <GridPane GridPane.columnIndex="2">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="88.0" minWidth="88.0" prefWidth="88.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="87.0" minWidth="87.0" prefWidth="87.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="70.0" minHeight="70.0" prefHeight="70.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Button fx:id="novoVoziloDugme" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" mnemonicParsing="false" onAction="#novoVozilo" prefHeight="60.0" prefWidth="60.0" styleClass="btnPrikazi" text="Novo Vozilo" textAlignment="CENTER" wrapText="true">
+                           <GridPane.margin>
+                              <Insets left="15.0" top="10.0" />
+                           </GridPane.margin></Button>
+                        <Button fx:id="prihvatiZahtjevDugme" alignment="CENTER" contentDisplay="CENTER" disable="true" maxHeight="60.0" maxWidth="-Infinity" minHeight="60.0" minWidth="-Infinity" mnemonicParsing="false" prefHeight="60.0" prefWidth="62.0" styleClass="btnPrikazi" text="Prihvati Vozilo" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="1">
+                           <GridPane.margin>
+                              <Insets left="15.0" top="10.0" />
+                           </GridPane.margin></Button>
+                     </children>
+                  </GridPane>
+               </children>
+            </GridPane>
+         </children>
+      </GridPane>
+      <ScrollPane hbarPolicy="NEVER" maxHeight="200.0" maxWidth="340.0" minHeight="200.0" minWidth="340.0" prefHeight="200.0" prefWidth="350.0" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets left="5.0" right="5.0" />
+         </GridPane.margin>
+         <content>
+            <TableView fx:id="tabelaListaZahtjeva" maxHeight="200.0" maxWidth="340.0" minHeight="200.0" minWidth="340.0" prefHeight="200.0" prefWidth="340.0">
+              <columns>
+                <TableColumn fx:id="kolonaBrojZahtjeva" prefWidth="89.0" text="Broj zahtjeva" />
+                <TableColumn fx:id="kolonaDatumZahtjeva" prefWidth="116.0" text="Datum zahtjeva" />
+                  <TableColumn fx:id="KolonaKrajnjiRokObrade" prefWidth="131.0" text="Krajnji rok obrade" />
+              </columns>
+            </TableView>
+         </content></ScrollPane>
+      <ScrollPane hbarPolicy="NEVER" maxHeight="200.0" maxWidth="-Infinity" minHeight="200.0" minWidth="-Infinity" prefHeight="200.0" prefWidth="335.0" vbarPolicy="NEVER" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets left="10.0" />
+         </GridPane.margin>
+         <content>
+            <TableView fx:id="tabelaServisnaKnjigaVozila" maxHeight="200.0" maxWidth="331.0" minHeight="200.0" minWidth="320.0" prefHeight="200.0" prefWidth="331.0">
+              <columns>
+                <TableColumn fx:id="KolonaIdVozila" prefWidth="60.0" text="Id Vozila" />
+                <TableColumn fx:id="kolonaZadnjiServis" prefWidth="92.0" text="Zadnji servis" />
+                  <TableColumn fx:id="kolonaOpisProblema" prefWidth="178.0" text="Opis problema" />
+              </columns>
+            </TableView>
+         </content></ScrollPane>
+      <GridPane GridPane.rowIndex="2">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="350.0" minWidth="350.0" prefWidth="350.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="50.0" minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="250.0" minHeight="250.0" prefHeight="250.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Lista korisnika servisa">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="110.0" top="10.0" />
+               </GridPane.margin>
+            </Label>
+            <ScrollPane hbarPolicy="NEVER" maxHeight="240.0" maxWidth="340.0" minHeight="240.0" minWidth="250.0" prefHeight="240.0" prefWidth="340.0" GridPane.rowIndex="1">
+               <content>
+                  <TableView fx:id="tabelaListaKorisnika" maxHeight="240.0" maxWidth="340.0" minHeight="240.0" prefHeight="250.0" prefWidth="335.0">
+                    <columns>
+                      <TableColumn fx:id="kolonaId" prefWidth="50.0" text="Id" />
+                      <TableColumn fx:id="kolonaKategorija" prefWidth="144.0" text="Kategorija" />
+                        <TableColumn fx:id="kolonaIme" prefWidth="137.0" text="Ime" />
+                    </columns>
+                  </TableView>
+               </content>
+            </ScrollPane>
+         </children>
+         <GridPane.margin>
+            <Insets left="5.0" />
+         </GridPane.margin>
+      </GridPane>
+      <GridPane GridPane.columnIndex="1" GridPane.rowIndex="2">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="50.0" minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="250.0" minHeight="250.0" prefHeight="250.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Informacije o vozilu">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="100.0" top="5.0" />
+               </GridPane.margin>
+            </Label>
+         </children>
+      </GridPane>
+      <GridPane GridPane.columnIndex="1">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="350.0" minWidth="350.0" prefWidth="350.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="70.0" minHeight="70.0" prefHeight="70.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Servisna knjiga vozila" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="100.0" />
+               </GridPane.margin>
+            </Label>
+            <Button fx:id="odbijZahtjevDugme" disable="true" minHeight="60.0" minWidth="60.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" styleClass="btnIzadji" text="Odbij Vozilo" textAlignment="CENTER" wrapText="true">
+               <GridPane.margin>
+                  <Insets left="15.0" top="10.0" />
+               </GridPane.margin>
+            </Button>
+         </children>
+      </GridPane>
+   </children>
+</GridPane>

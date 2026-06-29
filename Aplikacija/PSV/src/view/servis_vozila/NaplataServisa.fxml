@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.collections.*?>
+
+<VBox maxHeight="220.0" minHeight="220.0" prefHeight="320.0" style="-fx-background-color: ffbf49;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.servis_vozila.NaplataServisaKontroler">
+   <children>
+      <GridPane maxHeight="220.0" maxWidth="500.0" minHeight="220.0" minWidth="500.0" prefHeight="600.0" prefWidth="500.0">
+        <columnConstraints>
+          <ColumnConstraints />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="500.0" minWidth="500.0" prefWidth="500.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="50.0" minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="120.0" minHeight="120.0" prefHeight="250.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="50.0" minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <HBox prefHeight="50.0" prefWidth="490.0" style="-fx-background-color: ffff55;" GridPane.columnIndex="1">
+               <children>
+                  <Label text="Naplata servisnih usluga" textAlignment="CENTER" textFill="#49b3ff">
+                     <font>
+                        <Font name="System Bold Italic" size="16.0" />
+                     </font>
+                     <padding>
+                        <Insets left="130.0" top="10.0" />
+                     </padding>
+                  </Label>
+               </children>
+               <GridPane.margin>
+                  <Insets bottom="3.0" left="8.0" right="8.0" top="3.0" />
+               </GridPane.margin>
+            </HBox>
+            <HBox maxHeight="120.0" maxWidth="500.0" minHeight="120.0" minWidth="500.0" prefHeight="240.0" prefWidth="500.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <children>
+                  <GridPane>
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="490.0" minWidth="485.0" prefWidth="485.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <GridPane maxHeight="65.0" minHeight="65.0" prefHeight="40.0" style="-fx-background-color: ffff55;">
+                           <children>
+                              <Label text="LIčni broj menadžera:" textFill="#ab3232">
+                                 <font>
+                                    <Font name="System Bold Italic" size="12.0" />
+                                 </font>
+                                 <GridPane.margin>
+                                    <Insets left="30.0" top="20.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <TextField fx:id="poljeLicniBroj" GridPane.columnIndex="1">
+                                 <GridPane.margin>
+                                    <Insets right="80.0" top="20.0" />
+                                 </GridPane.margin>
+                              </TextField>
+                           </children>
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="170.0" minWidth="215.0" prefWidth="170.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="270.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <GridPane.margin>
+                              <Insets bottom="10.0" top="20.0" />
+                           </GridPane.margin>
+                        </GridPane>
+                     </children>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="30.0" />
+                     </HBox.margin>
+                  </GridPane>
+               </children>
+               <GridPane.margin>
+                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+               </GridPane.margin>
+            </HBox>
+            <HBox prefHeight="500.0" prefWidth="500.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <children>
+                  <Button fx:id="okDugme" maxHeight="35.0" maxWidth="50.0" minHeight="35.0" minWidth="55.0" mnemonicParsing="false" onAction="#potvrdi" prefHeight="35.0" prefWidth="50.0" text="OK">
+                     <HBox.margin>
+                        <Insets bottom="15.0" left="190.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="cancelDugme" maxHeight="35.0" maxWidth="50.0" minHeight="35.0" minWidth="55.0" mnemonicParsing="false" onAction="#otkazi" prefHeight="35.0" prefWidth="55.0" text="Cancel">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <GridPane.margin>
+                  <Insets bottom="20.0" />
+               </GridPane.margin>
+            </HBox>
+         </children>
+      </GridPane>
+   </children>
+   <padding>
+      <Insets top="15.0" />
+   </padding>
+</VBox>

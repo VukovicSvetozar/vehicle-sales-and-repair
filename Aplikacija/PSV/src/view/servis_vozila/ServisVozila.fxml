@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+
+<AnchorPane maxHeight="600.0" maxWidth="-Infinity" minHeight="600.0" minWidth="-Infinity" prefHeight="600.0" prefWidth="850.0" styleClass="background" stylesheets="@../../style/ServisVozila.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.servis_vozila.ServisVozilaKontroler">
+   <children>
+      <TabPane fx:id="tabKontejner" maxHeight="600.0" maxWidth="-Infinity" minHeight="600.0" minWidth="-Infinity" prefHeight="600.0" prefWidth="850.0" side="LEFT" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0">
+        <tabs>
+          <Tab fx:id="tab1">
+            <content>
+              <AnchorPane maxHeight="600.0" maxWidth="-Infinity" minHeight="600.0" minWidth="-Infinity" prefHeight="600.0" prefWidth="750.0">
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding></AnchorPane>
+            </content>
+               <graphic>
+                  <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="100.0">
+                     <children>
+                        <Button mnemonicParsing="false" prefHeight="80.0" prefWidth="80.0" styleClass="btnPrikazi" text="Zahtjevi" />
+                     </children>
+                  </VBox>
+               </graphic>
+          </Tab>
+            <Tab fx:id="tab2">
+               <content>
+                  <AnchorPane maxHeight="600.0" maxWidth="700.0" minHeight="600.0" minWidth="700.0" prefHeight="600.0" prefWidth="700.0">
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </AnchorPane>
+               </content>
+               <graphic>
+                  <VBox alignment="CENTER" maxHeight="90.0" maxWidth="90.0" minHeight="90.0" minWidth="90.0" prefHeight="90.0" prefWidth="90.0">
+                     <children>
+                        <Button disable="true" mnemonicParsing="false" prefHeight="80.0" prefWidth="80.0" styleClass="btnPrikazi" text="Servis" />
+                     </children>
+                  </VBox>
+               </graphic>
+            </Tab>
+            <Tab fx:id="tab3">
+               <content>
+                  <AnchorPane maxHeight="600.0" maxWidth="700.0" minHeight="600.0" minWidth="700.0" prefHeight="600.0" prefWidth="700.0">
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </AnchorPane>
+               </content>
+               <graphic>
+                  <VBox alignment="CENTER" maxHeight="90.0" maxWidth="90.0" minHeight="90.0" minWidth="90.0" prefHeight="90.0" prefWidth="90.0">
+                     <children>
+                        <Button disable="true" mnemonicParsing="false" prefHeight="80.0" prefWidth="80.0" styleClass="btnPrikazi" text="Plaćanje" />
+                     </children>
+                  </VBox>
+               </graphic>
+            </Tab>
+            <Tab fx:id="tab4" onSelectionChanged="#izadji">
+               <content>
+                  <AnchorPane maxHeight="600.0" maxWidth="700.0" minHeight="600.0" minWidth="700.0" prefHeight="600.0" prefWidth="700.0">
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </AnchorPane>
+               </content>
+               <graphic>
+                  <VBox alignment="CENTER" maxHeight="90.0" maxWidth="90.0" minHeight="90.0" minWidth="90.0" prefHeight="90.0" prefWidth="90.0">
+                     <children>
+                        <Button fx:id="izlazDugme" alignment="CENTER" maxHeight="80.0" maxWidth="80.0" minHeight="80.0" minWidth="80.0" mnemonicParsing="false" onAction="#izadji" prefHeight="80.0" prefWidth="80.0" styleClass="btnIzadji" text="Izađi" />
+                     </children>
+                  </VBox>
+               </graphic>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

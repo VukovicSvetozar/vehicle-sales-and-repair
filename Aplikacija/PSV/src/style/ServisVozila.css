@@ -1,0 +1,120 @@
+.background {
+     -fx-background-color: linear-gradient(rgb(30, 144, 255) 0%, rgb(30, 144, 255) 100%),
+    	linear-gradient(rgb(30, 144, 255), rgb(235, 206, 235)),
+    	linear-gradient(rgb(235, 206, 235) 0%, rgb(135, 206, 235) 100%);
+    -fx-background-insets: 0, 1, 3;
+    -fx-background-radius: 7, 8, 9;
+    -fx-text-fill: #ADD8E6;
+}
+
+.tab-pane *.tab-header-area *.tab-header-background {
+  -fx-background-color:transparent;
+}
+
+.tab-pane {
+  -fx-tab-min-width:100px;
+  -fx-tab-max-width:100px;
+  -fx-tab-min-height:100px;
+  -fx-tab-max-height:100px;
+}
+
+.tab {
+  -fx-font-family: Arial;
+  -fx-font-size: 12;
+  -fx-background-color:rgb(135, 206, 235);
+}
+
+.tab:selected {
+    -fx-background-color:rgb(135, 206, 235);
+}
+
+.button {
+    -fx-font-size: 12;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-style: italic;
+}
+
+.btnPrikazi{
+       -fx-background-color: linear-gradient(rgb(30, 144, 255) 0%, rgb(30, 144, 255) 100%),
+    	linear-gradient(rgb(30, 144, 255), rgb(135, 206, 235)),
+    	linear-gradient(rgb(135, 206, 235) 20%, rgb(0, 0, 0) 100%);
+    -fx-background-insets: 0, 1, 3;
+    -fx-background-radius: 7, 8, 9;
+}
+    
+.btnIzadji {
+     -fx-background-color: linear-gradient(rgb(30, 144, 255) 0%, rgb(30, 144, 255) 100%),
+    	linear-gradient(rgb(30, 144, 255), rgb(235, 206, 235)),
+    	linear-gradient(rgb(235, 206, 235) 20%, rgb(0, 0, 0) 100%);
+    -fx-background-insets: 0, 1, 3;
+    -fx-background-radius: 7, 8, 9;
+    -fx-text-fill: #ADD8E6;
+}
+
+.button:hover {	
+	-fx-background-color: linear-gradient(rgb(30, 144, 255) 0%, rgb(30, 144, 255) 100%),
+    	linear-gradient(rgb(30, 144, 255), rgb(135, 206, 235)),
+    	linear-gradient(rgb(225, 255, 255) 0%, rgb(30, 144, 255) 100%);
+    -fx-background-insets: 0, 1, 3;
+    -fx-background-radius: 7, 8, 9;
+    -fx-text-fill: rgb(30, 144, 255);
+ }
+ 
+ .tableview {
+	-fx-padding: 10px;
+}
+
+.table-column {
+	-fx-alignment: center;
+	-fx-font-weight: bold;
+  	-fx-font-style: italic;
+  	-fx-text-fill: green;
+}
+
+.table-row-cell {
+  	-fx-control-inner-background: lightcyan ;
+ }
+
+.table-row-cell:odd{
+ /*    -fx-background-color: -fx-table-cell-border-color, Lavender   ;
+    */-fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em;
+}
+
+.table-row-cell:even{
+    /*-fx-background-color: -fx-table-cell-border-color, LightSalmon   ;
+    */-fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em;
+}
+
+.table-view .column-header .label {
+	-fx-background-color: gold;
+    -fx-text-fill: brown;
+}
+
+.list-cell {
+  	-fx-alignment: center;
+  	-fx-font-weight: bold;
+  	-fx-font-style: italic;
+}
+
+.list-cell:filled:hover {
+    -fx-background-color: orange;
+    -fx-text-fill: white;
+}
+
+.list-cell:odd{
+	-fx-background-color: #fffb00;
+}
+
+.list-cell:even{
+	-fx-background-color: LightSalmon;
+}
+
+.list-cell:filled:selected {
+    -fx-background-color: orange;
+    -fx-text-fill: white;
+}
+
+ 
