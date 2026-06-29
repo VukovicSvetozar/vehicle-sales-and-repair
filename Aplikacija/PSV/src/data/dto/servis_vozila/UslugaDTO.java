@@ -6,7 +6,7 @@ public class UslugaDTO {
 	private RadniNalogDTO radniNalog;
 	private NaplataServisaDTO naplataServisa;
 	private double cijenaUsluge;
-	private double brojUtrošenihSati;
+	private double brojUtrosenihSati;
 	private double koeficijentRadova;
 	private double cijenaDijelova;
 
@@ -42,12 +42,12 @@ public class UslugaDTO {
 		this.cijenaUsluge = cijenaUsluge;
 	}
 
-	public double getBrojUtrošenihSati() {
-		return brojUtrošenihSati;
+	public double getBrojUtrosenihSati() {
+		return brojUtrosenihSati;
 	}
 
-	public void setBrojUtrošenihSati(double brojUtrošenihSati) {
-		this.brojUtrošenihSati = brojUtrošenihSati;
+	public void setBrojUtrosenihSati(double brojUtrosenihSati) {
+		this.brojUtrosenihSati = brojUtrosenihSati;
 	}
 
 	public double getKoeficijentRadova() {
@@ -72,7 +72,7 @@ public class UslugaDTO {
 		int result = 1;
 		result = prime * result + brojUsluge;
 		long temp;
-		temp = Double.doubleToLongBits(brojUtrošenihSati);
+		temp = Double.doubleToLongBits(brojUtrosenihSati);
 		result = prime * result + (int) (temp ^ (temp >>> 32));
 		temp = Double.doubleToLongBits(cijenaDijelova);
 		result = prime * result + (int) (temp ^ (temp >>> 32));
@@ -96,7 +96,7 @@ public class UslugaDTO {
 		UslugaDTO other = (UslugaDTO) obj;
 		if (brojUsluge != other.brojUsluge)
 			return false;
-		if (Double.doubleToLongBits(brojUtrošenihSati) != Double.doubleToLongBits(other.brojUtrošenihSati))
+		if (Double.doubleToLongBits(brojUtrosenihSati) != Double.doubleToLongBits(other.brojUtrosenihSati))
 			return false;
 		if (Double.doubleToLongBits(cijenaDijelova) != Double.doubleToLongBits(other.cijenaDijelova))
 			return false;
@@ -120,25 +120,24 @@ public class UslugaDTO {
 	@Override
 	public String toString() {
 		return "UslugaDTO [brojUsluge=" + brojUsluge + ", radniNalog=" + radniNalog + ", naplataServisa="
-				+ naplataServisa + ", cijenaUsluge=" + cijenaUsluge + ", brojUtrošenihSati=" + brojUtrošenihSati
+				+ naplataServisa + ", cijenaUsluge=" + cijenaUsluge + ", brojUtrosenihSati=" + brojUtrosenihSati
 				+ ", koeficijentRadova=" + koeficijentRadova + ", cijenaDijelova=" + cijenaDijelova + "]";
 	}
 
 	public UslugaDTO(int brojUsluge, RadniNalogDTO radniNalog, NaplataServisaDTO naplataServisa, double cijenaUsluge,
-			double brojUtrošenihSati, double koeficijentRadova, double cijenaDijelova) {
+			double brojUtrosenihSati, double koeficijentRadova, double cijenaDijelova) {
 		super();
 		this.brojUsluge = brojUsluge;
 		this.radniNalog = radniNalog;
 		this.naplataServisa = naplataServisa;
 		this.cijenaUsluge = cijenaUsluge;
-		this.brojUtrošenihSati = brojUtrošenihSati;
+		this.brojUtrosenihSati = brojUtrosenihSati;
 		this.koeficijentRadova = koeficijentRadova;
 		this.cijenaDijelova = cijenaDijelova;
 	}
 
 	public UslugaDTO() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
 }

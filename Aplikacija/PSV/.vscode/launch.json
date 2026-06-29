@@ -1,0 +1,12 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Pokreni Prodaja i Servis Vozila",
+            "request": "launch",
+            "mainClass": "run.PokretanjeAplikacije",
+            "vmArgs": "--module-path /home/svetozar/Projects/JavaFX/javafx-sdk-17.0.19/lib --add-modules javafx.controls,javafx.fxml"
+        }
+    ]
+}

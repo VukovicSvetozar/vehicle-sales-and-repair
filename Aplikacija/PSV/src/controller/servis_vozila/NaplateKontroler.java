@@ -73,7 +73,6 @@ public class NaplateKontroler implements RefreshableController{
 
 	@Override
 	public void refresh() {
-		// TODO Auto-generated method stub
 		
 	}
 

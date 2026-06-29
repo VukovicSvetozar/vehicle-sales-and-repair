@@ -2,8 +2,6 @@ package data.dto.prodaja_vozila;
 
 import java.io.Serializable;
 
-import data.dto.prodaja_vozila.KlijentDTO;
-
 @SuppressWarnings("serial")
 public class DistributerVozilaDTO implements Serializable {
 

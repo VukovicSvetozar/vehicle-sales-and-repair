@@ -8,25 +8,22 @@ public class MySQLDobavljacDAO implements DobavljacDAO{
 
 	@Override
 	public ObservableList<DobavljacDTO> dobavljac(int IdKlijenta) {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
 	public boolean dodajDobavljac(DobavljacDTO dobavljac) {
-		// TODO Auto-generated method stub
+
 		return false;
 	}
 
 	@Override
 	public boolean azurirajDobavljac(DobavljacDTO dobavljac) {
-		// TODO Auto-generated method stub
 		return false;
 	}
 
 	@Override
 	public boolean obrisiDobavljac(int IdKlijenta) {
-		// TODO Auto-generated method stub
 		return false;
 	}
 	
