@@ -1,10 +1,28 @@
-## Specifikacija informacionih potreba
+<br>
+<br>
+<div align="center">
+  <h1>Vehicle Sales and Repair</h1> 
+</div>
+<br>
 
-> **PSV (Prodaja i Servis Vozila)** predstavlja specijalizovani programski sistem namijenjen poslovanju i zahtjevima auto kuća i salona, kao i centrima koji nude usluge servisiranja vozila. 
+**PSV (Prodaja i Servis Vozila)** predstavlja specijalizovani programski sistem namijenjen poslovanju i zahtjevima auto kuća i salona, kao i centrima koji nude usluge servisiranja vozila. 
 
 Aplikacija omogućava jednostavno i efikasno upravljanje nabavkom i distribucijom vozila, vođenje evidencije o ponudama, narudžbama i ugovorima sklopljenim u toku kupoprodaje vozila, radnim nalozima, terminima za servis i drugim dokumentima.
 
+<div style="page-break-before: always;"></div>
+
+<div align="center">
+  <img src="Aplikacija/assets/2.png" width="600" alt="Simulacija u radu">&nbsp;
+</div>
+
+<div align="center">
+  <img src="Aplikacija/assets/3.png" width="500" alt="Simulacija u radu">&nbsp;
+  <img src="Aplikacija/assets/4.png" width="480" alt="Simulacija u radu">&nbsp;
+</div>
+
 ---
+
+## 📋 Specifikacija informacionih potreba
 
 ### 1. Upravljanje zaposlenima
 
